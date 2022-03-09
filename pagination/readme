@@ -1,0 +1,24 @@
+1) Base de données :
+
+Nom : pagination 
+Login : root
+Pwd : ''
+host : localhost 
+
+
+2) db.php :
+
+Connexion avec mysqli 
+Exécution
+Recherche : fetch 
+
+3) index.php : 
+
+Affichage
+Pagination 
+Formulaire 
+
+4) ajouter.php :
+
+Requête sql d'ajout 
+Redirection 
