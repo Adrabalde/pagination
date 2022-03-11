@@ -3,53 +3,9 @@
 <head>
 	<title>Système de pagination simple en PHP</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-	<style>
-		.input-group {
-			margin: 10px 0px 10px 0px;
-		}
-		.input-group label {
-			
-			margin: 3px;
-		}
-		.input-group input {
-			height: 30px;
-			width: 150px;
-			padding: 5px 10px;
-			font-size: 16px;
-			border-radius: 5px;
-			border: 1px solid gray;
-		}
-		.btn {
-			padding: 10px;
-			font-size: 15px;
-			color: white;
-			background: #5F9EA0;
-			border: none;
-			border-radius: 5px;
-		}
-		.card {
-			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-			transition: 0.3s;
-			
-			padding:auto;
-			
-		}
 
-		.card:hover {
-		    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-			
-		}
-
-		.container {
-		    padding: 2px 16px;
-		}
-</style>
-	</style>
-	
 </head>
-<body style="text-align:center">
-
-
+<body style = "text-align: center">
 
 	<h2>Pagination simple en PHP</h2>
 	<p>
@@ -74,7 +30,6 @@
 	// Calculer le nombre des pages 
 	$nb_de_page = ceil($nb_commentaire / $nb_par_page);
 
-	
 	?>
 	<?php
 	// Dans cette variable on recupère le nombre de la page selectionnée
@@ -95,8 +50,7 @@
 		 
 // On affiche le contenu et la date de chaque commentaire 
 	 ?>	 
-		
-		<div class="card" >
+		<div>
 		<h4><b><?=$row["contenu"]?></b></h4>
 		<div class="container">
 		<p><?=$row["date"]?></p> 
@@ -113,27 +67,21 @@
 			echo "<a href='?page=$i'>$i</a>&nbsp&nbsp&nbsp";
 		 }
 
-		 
 		?>
     </div>	
 	<!-- 
 		Un formulaire pour ajouter un nouveau commentaire 
 	 -->
-	
 	<h3>Ajouter votre commentaire</h3>
 	<form method="post" action="ajouter.php">
-	<div class="input-group">
+	<div>
 		<label>Votre commentaire</label>
 		<br>
 		<textarea name="contenu" id="contenu" cols="30" rows="5"></textarea>
 		<br>
-		
-		<input class="btn" type="submit" id="ajouter" value="Ajouter"></button>
+		<input type="submit" id="ajouter" value="Ajouter"></button>
 	</div>
  </form>
 	
-
-
-
 </body>
 </html>
