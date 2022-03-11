@@ -8,11 +8,7 @@
 <body style = "text-align: center">
 
 	<h2>Pagination simple en PHP</h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et odio cum accusamus expedita eligendi! Explicabo, ratione? Quis, inventore? Voluptatum minima nemo eius praesentium consectetur aliquid unde quia fugit quos.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et odio cum accusamus expedita eligendi! Explicabo, ratione? Quis, inventore? Voluptatum minima nemo eius praesentium consectetur aliquid unde quia fugit quos.
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, et odio cum accusamus expedita eligendi! Explicabo, ratione? Quis, inventore? Voluptatum minima nemo eius praesentium consectetur aliquid unde quia fugit quos.
-	</p>
+	
     <?php
 	// Importer le fichier de la base de données 
 	require_once 'db.php'; 
