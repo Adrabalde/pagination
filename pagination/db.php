@@ -9,16 +9,28 @@ $dbConn = new mysqli('localhost', 'root', '', 'pagination') ;
 
     // Fonction pour exécuter une requête SQL 
 	// Retourner le resultat 
+
+/* Executer une requete SQL 
+* @Input string $sql
+* Return SQLResult $result
+*/ 
 function dbQuery($sql) {
 	global $dbConn;   
 	$result = mysqli_query($dbConn, $sql) or die(mysqli_error($dbConn));
 	return $result;
 }
-    // Pour chercher au niveau du resultat d'une requête SQL
+
+ /* Chercher les enregistrement d'une requete SQL
+* @Input SQL Result $result
+* Return tableau associative
+*/ 
 function dbFetchAssoc($result) {
 	return mysqli_fetch_assoc($result);
 }
-    // Fermer une connexion  
+ /* 
+ * Fermer une connexion de type mysql
+* 
+*/ 
 function closeConn() {
 	global $dbConn;
 	mysqli_close($dbConn);
